@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="QQServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/QQServer_jar</output-path>
+    <root id="archive" name="QQServer.jar">
+      <element id="module-output" name="QQServer" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hsqldb/sqltool/2.4.1/sqltool-2.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hsqldb/hsqldb/2.4.1/hsqldb-2.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

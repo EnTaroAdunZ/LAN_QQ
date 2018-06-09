@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ztf.controller.ChatWinController">
+   <children>
+      <VBox prefHeight="732.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="lb_name" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="20.0" prefWidth="719.0" style="-fx-background-color: #FFEC8B;" text="对面昵称" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="137.0" prefWidth="700.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="iv_file" fitHeight="103.0" fitWidth="101.0" onMouseClicked="#sendFile" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="447.0" text="传送文件">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="iv_video" fitHeight="103.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="447.0" text="视频">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="iv_sound" fitHeight="103.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="447.0" text="语音">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="504.0" prefWidth="700.0">
+               <children>
+                  <VBox prefHeight="504.0" prefWidth="465.0">
+                     <children>
+                        <TextArea fx:id="ta_message" editable="false" prefHeight="315.0" prefWidth="462.0">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <TextArea fx:id="ta_wait_sendMessage" prefHeight="142.0" prefWidth="475.0">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="40.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="504.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="iv_show1" fitHeight="220.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="iv_show2" fitHeight="220.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets top="60.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onMouseClicked="#sendMessage" style="-fx-background-color: #FFEC8B;" text="发送消息">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

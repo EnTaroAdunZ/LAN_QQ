@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="388.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ztf.controller.MainController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="501.0">
+               <image>
+                  <Image url="/image/bg1.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="181.0" prefWidth="176.0">
+               <children>
+                  <ImageView fitHeight="175.0" fitWidth="176.0">
+                     <image>
+                        <Image url="/image/bg2.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="142.0" prefWidth="207.0">
+                     <children>
+                        <TextField fx:id="tf_account" prefHeight="42.0" prefWidth="131.0" promptText="帐号..." text="ztf1">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <PasswordField fx:id="pf_password" promptText="密码..." text="ztf1">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <TextField fx:id="tf_serverIP" prefHeight="42.0" prefWidth="131.0" promptText="服务器IP..." text="172.18.174.35">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#loadOn" prefHeight="40.0" prefWidth="226.0" style="-fx-background-color: #09a3dc;" text="登  录" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
